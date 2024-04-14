@@ -48,6 +48,38 @@ After installing Docker, you may need to perform some additional steps:
     docker ps
     ```
 
+## Basic Node.js App Setup
+
+Follow these steps to set up and run a basic Node.js application using Docker:
+
+1. Clone the project repository:
+
+    ```bash
+    git clone https://github.com/Arbazkhan04/docker_Advance.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd docker_Advance
+    ```
+
+3. Build the Docker image for the Node.js application:
+
+    ```bash
+    docker build -t node-app .
+    ```
+
+4. Run the Docker container:
+
+    ```bash
+    docker run -d -p 3000:3000 node-app:latest
+    ```
+
+5. Access the running application in your web browser at `http://localhost:3000`.
+
+
+
 ## Usage
 
 You're now ready to use Docker on your system. You can start creating and managing containers using Docker commands.
